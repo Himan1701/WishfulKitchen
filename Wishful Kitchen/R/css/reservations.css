@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: white;
+}
+
+#reservations_wrapper h2 {
+    font-size: 1.5em;
+}
+
+#reservations_request {
+    border: 1px solid white;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 605px;
+}
+
+#reservations_request h2 {
+    text-align: center;
+}
+
+#reservations_form fieldset {
+    border: 1px solid black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: .5em;
+}
+
+#reservations_form legend {
+    color: black;
+    font-style: italic;
+    font-size: 85%;
+    margin-bottom: .5em;
+    line-height: 1em;
+}
+
+#reservations_form label {
+    float: left;
+    width: 135px;
+}
+
+#reservations_form input,
+#reservations_form select {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+
+#reservations_form input {
+    width: 14em;
+}
+
+#reservations_form #reservationDate {
+    cursor: pointer;
+}
+
+#reservations_form #seating_grid {
+    display: grid;
+    grid-template-columns: 142px 1.5em 140px 1.5em auto;
+    margin: 0.3em 0;
+}
+
+#reservations_form #seating_grid label {
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#reservations_form input.seating {
+    align-self: center;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+#reservations_form p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+#reservations_form #numTables {
+    width: 50px;
+}
+
+#reservations_form #privateRoom {
+    width: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+}
+
+#reservations_form .comments {
+    display: block;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+#reservations_form textarea {
+    resize: none;
+}
+
+#reservations_form #submit {
+    margin-left: 0;
+    width: 10em;
+}
+
+#reservations_form .error {
+    color: red;
+    font-size: 0.9em;
+}
+
+#reservations_form button {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 1em;
+}
+
+#reservations_list {
+    padding: 2em 0;
+}
+
+
+#reservations_list caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 2em;
+}
+
+#reservations_list table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 95%;
+}
+
+#reservations_list th,
+#reservations_list td {
+    /*    line-height: 2em;*/
+    border: 1px solid black;
+    padding: 0.5em 0.3em;
+    width: 100px;
+}
+
+#reservations_list th {
+    background-color: black;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    color: white;
+    padding: 0.5em 0.3em;
+    width: 100px;
+}
+
+#reservations_list tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#reservations_list .center {
+    text-align: center;
+}
+
+#reservations_list button.details {
+    background-color: black;
+    border: black 2px solid;
+    color: white;
+    padding: 0.3em;
+}
+
+#reservations_list button.delete {
+    background-color: darkred;
+    border: darkred 2px solid;
+    color: white;
+    padding: 0.3em;
+}
+
+#confirmationDialog p {
+    text-align: center;
+}
+
+#detailsDialog p {
+    font-weight: bold;
+}
+
+#detailsDialog span {
+    color: #666666;
+    font-weight: normal;
+}
